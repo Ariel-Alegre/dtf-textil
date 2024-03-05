@@ -1,0 +1,55 @@
+.bg_view_price {
+    position: relative;
+    background-image: url('https://i0.wp.com/evolutiondigital.es/wp-content/uploads/2021/07/FOTO-DTF-GRUPO-5.jpg?fit=800%2C800&ssl=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 5em;
+
+}
+
+.bg_view_price::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ocupa toda la altura del padre (bg_view_price) */
+    background-color: rgba(0, 0, 0, 0.32);
+    width: 100%;
+}
+
+.title {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+
+}
+.subTitle {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2em;
+    text-align: center;
+}
+@media (max-width: 768px) {
+
+    .title {
+        font-size: 30px;
+    
+    }
+    
+ 
+}
